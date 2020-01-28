@@ -6,8 +6,4 @@ RUN wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-s
 
 COPY task.sh .
 
-RUN echo pwd
-
-RUN ls -l
-
-ENTRYPOINT  ./task.sh
+ENTRYPOINT  task.sh
