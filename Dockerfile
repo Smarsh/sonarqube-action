@@ -4,6 +4,6 @@ RUN wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-s
     unzip sonar-scanner-cli-3.0.3.778-linux.zip  && \
     cd /usr/bin && ln -s /sonar-scanner-3.0.3.778-linux/bin/sonar-scanner sonar-scanner
 
-COPY task.sh action/
+ADD task.sh .
 
-ENTRYPOINT  action/task.sh
+ENTRYPOINT  ./task.sh
