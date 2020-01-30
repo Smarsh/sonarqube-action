@@ -8,17 +8,20 @@ inputs:
     description: 'Url for sonar server'
     required: true
   SONAR_PROJECT_KEY:
-    description: ''
+    description: 'Target project key'
     required: true
   SONAR_PROJECT_NAME:
-    description: ''
+    description: 'Target project name'
+    required: true
+  SONAR_TOKEN:
+    description: 'Sonar bot token'
     required: true
   GITHUB_REPOSITORY:
     description: 'Target repository'
     required: true
   GITHUB_ACCESS_TOKEN:
-    description: 'put this as a secret in the target repository'
+    description: 'Put this as a secret in the target repository'
     required: true
 branding:
   icon: 'umbrella'
-  color: 'black'
+  color: 'gray-dark'
