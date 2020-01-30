@@ -1,5 +1,24 @@
-name: sonar-sacn
-description: ''
+name: SonarQube
+description: Scans every pull request
 runs:
   using: 'docker'
   image: 'Dockerfile'
+inputs:
+  SONAR_URL:
+    description: 'Url for sonar server'
+    required: true
+  SONAR_PROJECT_KEY:
+    description: ''
+    required: true
+  SONAR_PROJECT_NAME:
+    description: ''
+    required: true
+  GITHUB_REPOSITORY:
+    description: 'Target repository'
+    required: true
+  GITHUB_ACCESS_TOKEN:
+    description: 'put this as a secret in the target repository'
+    required: true
+branding:
+  icon: 'umbrella'
+  color: 'black'
