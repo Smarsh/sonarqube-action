@@ -22,7 +22,7 @@ inputs:
   GITHUB_ACCESS_TOKEN:
     description: 'Put this as a secret in the target repository'
     required: true
-  GITHUB_PULLREQUEST:
+  GITHUB_PULL_REQUEST:
     description: 'Pull Request ID repository'
     required: false
 branding:
