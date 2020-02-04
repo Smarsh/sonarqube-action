@@ -24,7 +24,7 @@ inputs:
     required: true
   GITHUB_PULL_REQUEST:
     description: 'Pull Request ID repository'
-    required: false
+    required: true
 branding:
   icon: 'umbrella'
   color: 'gray-dark'
