@@ -2,8 +2,8 @@
 
 credhub login --skip-tls-validation
 
-GITHUB_ACCESS_TOKEN="$(credhub -q -n /concourse/${CONCOURSE_TEAM}/github-access-token)"
-SONAR_TOKEN="$(credhub -q -n /concourse/${CONCOURSE_TEAM}/sonar-token)"
+GITHUB_ACCESS_TOKEN="$(credhub get -q -n /concourse/${CONCOURSE_TEAM}/github-access-token)"
+SONAR_TOKEN="$(credhub get -q -n /concourse/${CONCOURSE_TEAM}/sonar-token)"
 
 cd target
 
