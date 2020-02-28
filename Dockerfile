@@ -1,4 +1,4 @@
-FROM pbardzinskismarsh/server_jre_8
+FROM openjdk:8
 
 RUN wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778-linux.zip && \
     unzip sonar-scanner-cli-3.0.3.778-linux.zip  && \
