@@ -25,6 +25,7 @@ set -o nounset
 
 # in newer versions of sonar scanner the default report-task.txt location may be different
 #REPORT_PATH=".scannerwork/report-task.txt"
+ls -l /github/workspace/target/.scannerwork
 REPORT_PATH="/github/workspace/target/.scannerwork/report-task.txt"
 CE_TASK_ID_KEY="ceTaskId="
 
