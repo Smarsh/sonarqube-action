@@ -28,6 +28,8 @@ set -o nounset
 ls -l
 echo "QG Script "
 ls -l /github/workspace/target/.scannerwork
+echo "Scanner Path"
+ls -l /sonar-scanner-3.0.3.778-linux
 REPORT_PATH="/github/workspace/target/.scannerwork/report-task.txt"
 CE_TASK_ID_KEY="ceTaskId="
 
