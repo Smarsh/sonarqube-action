@@ -24,8 +24,8 @@ set -o pipefail
 set -o nounset
 
 # in newer versions of sonar scanner the default report-task.txt location may be different
-REPORT_PATH=".scannerwork/report-task.txt"
-#REPORT_PATH=".sonar/report-task.txt"
+#REPORT_PATH=".scannerwork/report-task.txt"
+REPORT_PATH=".sonar/report-task.txt"
 CE_TASK_ID_KEY="ceTaskId="
 
 SONAR_INSTANCE=$SONAR_URL
