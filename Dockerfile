@@ -4,10 +4,9 @@ RUN wget https://github.com/cloudfoundry-incubator/credhub-cli/releases/download
     tar xf credhub-linux*.tgz -C /usr/local/bin && \
     chmod +x /usr/local/bin/credhub
 
-COPY sonar-scanner-cli-3.0.3.778-linux.zip .
-
-RUN unzip sonar-scanner-cli-3.0.3.778-linux.zip && \
-    cd /usr/bin && ln -s /sonar-scanner-3.0.3.778-linux/bin/sonar-scanner sonar-scanner
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && \
+    ./aws/install
 
 COPY task.sh /task.sh
 
